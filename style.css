@@ -1,14 +1,9 @@
 :root{
     /*Neutral*/
-    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
-    --very-dark-grayish-blue: hsl(213, 9%, 39%);
     --dark-grayish-blue: hsl(232, 10%, 55%);
     --grayish-blue: hsl(210, 4%, 67%);
     --white: hsl(0, 0%, 100%);
     /*Primary color*/
-    --soft-red: hsl(7, 99%, 70%);
-    --yellow: hsl(51, 100%, 49%);
-    --dark-desaturated-cyan: hsl(167, 40%, 24%);
     --dark-blue: hsl(198, 62%, 26%);
     --dark-moderate-cyan: hsl(168, 34%, 41%);
 }
@@ -88,11 +83,13 @@ div#content-text {
 
 #container {
     display: flex;
+    flex-direction: row;
     flex: nowrap;
     background-color: #F3EAE3;
     padding-left:419px;
     padding-top: 177px;
     padding-bottom: 177px;
+    width: 100%
 }
 
 .attribution {
@@ -123,4 +120,33 @@ button#add-to-cart:hover {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     transform: translateY(-7px);
     background-color: var(--dark-blue);
+}
+
+@media (max-width: 376px) {
+    #container {
+        padding-top: 28px;
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    img#image-base {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        width: 370px;
+        height: 241px;
+    }
+    div#content-text {
+        border-top-right-radius: 0px;
+        border-top-left-radius: 10px;
+    }
+    h1#heading-text {
+        padding-right: 44px;
+    }
+    button#add-to-cart {
+        width: 296px;
+        height: 48px;
+    }
 }
