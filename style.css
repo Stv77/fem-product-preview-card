@@ -125,8 +125,7 @@ button#add-to-cart:hover {
 @media (max-width: 376px) {
     #container {
         padding-top: 28px;
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 25px;
         display: flex;
         flex-direction: column;
     }
@@ -135,18 +134,39 @@ button#add-to-cart:hover {
         border-top-right-radius: 10px;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
-        width: 370px;
-        height: 241px;
+        width: 344px;
+        height: 240px;
     }
     div#content-text {
         border-top-right-radius: 0px;
-        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 284px;
+        height: 372px;
+        padding-left: 25px;
+        padding-top: 30px;
+        margin-top:-2px;
     }
     h1#heading-text {
         padding-right: 44px;
+        padding-bottom: 27px;
     }
     button#add-to-cart {
         width: 296px;
         height: 48px;
+    }
+    p#perfume {
+        padding-bottom: 19px;
+    }
+    p#description {
+        padding-bottom: 34px;
+    }
+    p#discount-price {
+        padding-bottom: 25px;
+    }
+    button#add-to-cart {
+        width: 215px;
+    }
+    p#before-discount-price {
+        padding-left: 22px;
     }
 }
