@@ -84,7 +84,6 @@ div#content-text {
 #container {
     display: flex;
     flex-direction: row;
-    flex: nowrap;
     background-color: #F3EAE3;
     padding-left:419px;
     padding-top: 177px;
@@ -122,10 +121,10 @@ button#add-to-cart:hover {
     background-color: var(--dark-blue);
 }
 
-@media (max-width: 376px) {
+@media only screen and (min-width: 375px) and (max-width: 440px) {
     #container {
-        padding-top: 28px;
-        padding-left: 25px;
+        padding-top: 10vh;
+        padding-left: 10vw;
         display: flex;
         flex-direction: column;
     }
